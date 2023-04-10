@@ -37,7 +37,5 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 
-# Need to figure out how to generate the DKIM keys and enable without using the gui, not sure if its working
-# Go to security.microsoft.com/dkim2 and generate keys 
 # Enable DKIM for the tenant
 New-DkimSigningConfig -DomainName $domain -Enabled $true
