@@ -36,7 +36,7 @@ Read-Host "Update the data value for your domain in main.tf's first record, then
 # will ask for API creds
 terraform init
 terraform plan
-terraform apply -auto-approve
+terraform apply
 
 # Need to figure out how to generate the DKIM keys and enable without using the gui, not sure if its working
 # Go to security.microsoft.com/dkim2 and generate keys 

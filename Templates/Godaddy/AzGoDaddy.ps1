@@ -35,7 +35,7 @@ Create-Domain $domain
 # will ask for API creds
 terraform init
 terraform plan
-terraform apply -auto-approve
+terraform apply
 
 # Enable DKIM for the tenant
 New-DkimSigningConfig -DomainName $domain -Enabled $true

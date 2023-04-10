@@ -28,7 +28,7 @@ variable "mail_protection" {
   default = "mail.protection.outlook.com"
 }
 
-resource "godaddy_domain_record" "gd-sandia" {
+resource "godaddy_domain_record" "gd-domain" {
   domain   = var.domain_name
 
   // required if provider key does not belong to customer
