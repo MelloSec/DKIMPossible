@@ -9,11 +9,11 @@ parser.add_argument("-t", "--tld", required=True, help="Top-level domain (TLD)")
 parser.add_argument("-v", "--verification", required=True, help="Verification record")
 parser.add_argument("-o", "--onmicrosoft", required=True, help="OnMicrosoft domain")
 parser.add_argument("-s", "--spf", required=True, help="SPF record")
-parser.add_argument("-o", "--output_file", default="main.tf", help="Output file name (default: main.tf)")
-parser.add_argument("-h", "--help", action="help", help="Show this help message and exit")
+parser.add_argument("-f", "--output_file", default="main.tf", help="Output file name (default: main.tf)")
+# parser.add_argument("-h", "--help", action="help", help="Show this help message and exit")
 
 # Add a custom usage example when -h is provided
-parser.usage = "\nExample: python your_script.py path/to/terraform_config.tf -d example -t com -v MS=example_verification -o example.onmicrosoft.com -s spf.example.com\n\n"
+parser.usage = "\nExample: python Templater.py NewNameCheapTemplate.tf -d example -t com -v 57679485 -o 17f2g -s mail -f newtemplate.tf \n\n"
 
 args = parser.parse_args()
 
