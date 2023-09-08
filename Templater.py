@@ -13,7 +13,7 @@ parser.add_argument("-f", "--output_file", default="main.tf", help="Output file 
 # parser.add_argument("-h", "--help", action="help", help="Show this help message and exit")
 
 # Add a custom usage example when -h is provided
-parser.usage = "\nExample: python Templater.py NewNameCheapTemplate.tf -d example -t com -v 57679485 -o 17f2g -s mail -f newtemplate.tf \n\n"
+parser.usage = "\nExample: python Templater.py NewNameCheapTemplate.tf -d example -t com -v ms7679485 -o 17f2g -s 12.34.51.63 -f newtemplate.tf \n\n"
 
 args = parser.parse_args()
 

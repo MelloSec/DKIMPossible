@@ -31,8 +31,13 @@ variable "onmicrosoft_domain" {
   default = "REPLACE_ONMICROSOFT.onmicrosoft.com"
 }
 
+variable "spf_ip" {
+  type = string
+  default = "REPLACE_SPF"
+}
+
 resource "namecheap_domain_records" "REPLACE_DOMAIN" {
-  domain = "${var.domain.fqdn}"
+  domain = "${var.domain_fqdn}"
   mode = "OVERWRITE"
   email_type = "MX"
 
@@ -45,7 +50,7 @@ resource "namecheap_domain_records" "REPLACE_DOMAIN" {
   record {
     hostname = "@"
     type     = "TXT"
-    address  = "v=spf1 ip4:REPLACE_SPF include:spf.protection.outlook.com ~all"
+    address  = "v=spf1 ip4:${var.spf_ip} include:spf.protection.outlook.com ~all"
     ttl      = 1800
   }
 // DMARC
