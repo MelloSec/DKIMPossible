@@ -13,7 +13,7 @@ variable "domain_fqdn" {
 
 variable "verification_record" {
   description = "MS verification record"
-  default = "MS=REPLACE_VERIFICATION"
+  default = "REPLACE_VERIFICATION"
 }
 
 variable "o365_protection" {
@@ -121,6 +121,11 @@ record {
 
 
   
+
+
+
+
+
 
 
 
