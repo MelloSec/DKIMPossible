@@ -4,8 +4,8 @@
 
 ### The configuration sets up the following DNS records:
 
-One TXT records for AzureAD domain verification
-Two MX record for SPF and Office 365 mail protection
+One TXT record for AzureAD domain verification
+Two MX records for SPF and Office 365 mail protection
 Two CNAME records for DKIM key setup
 Five CNAME records for Office 365 services (autodiscover, sip, lyncdiscover, msoid, enterpriseregistration, and enterpriseenrollment)
 One A record (for a custom IP address)
