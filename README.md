@@ -50,7 +50,7 @@ To add more DNS records or modify the existing ones, edit the record blocks in t
 
 Notes
 This configuration assumes that you have already set up a custom domain in AzureAD and have obtained the required verification record.
-There is an Az$Provider.ps1 in each folder that helps you set up what you need on the O365/AzureAD side.
+Use 'AzNameCheap.ps1' to onboard a new custom domain using powershell, create the template and run terraform.
 The A record for a custom IP address is commented out by default. Uncomment it and set the data attribute to your IP address if you need to add an A record.
 The mode and email_type attributes in the Namecheap provider are set to OVERWRITE and MX, respectively. Change them as needed.
 This configuration only adds DNS records for Office 365 services. If you need to add DNS records for other services, add them to the main.tf file as needed.
